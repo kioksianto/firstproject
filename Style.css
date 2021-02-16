@@ -1,0 +1,143 @@
+/* master style */
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+.container {
+  display: grid;
+}
+/* nav-bar style */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > div {
+  margin-right: 20px;
+  display: inline-block;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+  color: black;
+}
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+.active-nav-link a {
+  color: black;
+}
+
+/* Home style*/
+.img-text {
+  text-align: center;
+  color: antiquewhite;
+  padding: 250px;
+}
+.img-text-1 {
+  text-transform: uppercase;
+  padding: 40px;
+  font-size: 2.5em;
+}
+
+.img-text-2 {
+  font-size: 1.88em;
+}
+
+.image-background {
+  background: url(Blue-sky.jpg) no-repeat center center fixed;
+  height: 100vh;
+  background-size: 100% 100%;
+  background-attachment: scroll;
+}
+
+/* Portfolio */
+
+.portfolio {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  padding: 30px;
+}
+.card-1 {
+  flex: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 500px;
+  max-width: 600px;
+  flex-direction: column;
+  background-color: teal;
+  border-radius: 4px;
+  margin: 80px;
+  position: relative;
+}
+.card-2 {
+  flex: 1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 150px;
+  height: 500px;
+  max-width: 600px;
+  flex-direction: column;
+  background-color: teal;
+  margin: 80px;
+  border-radius: 4px;
+}
+.img-text {
+  position: relative;
+  justify-content: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-1 {
+  position: absolute;
+  top: 70%;
+  left: 16%;
+  text-align: center;
+  color: #fff;
+}
+.text-2 {
+  position: absolute;
+  top: 85%;
+  right: 19%;
+  text-align: center;
+  color: #fff;
+}
+
+/* About page */
+
+.two-column-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img {
+  width: 70%;
+  padding-left: 30px;
+}
+.profile-content-wrapper {
+  padding: 30px;
+}
+.profile-content-wrapper h2 {
+  color: rgb(29, 160, 160);
+}
